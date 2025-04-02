@@ -231,765 +231,10 @@ nav a:hover {
     content: "• ";
 }
 
-
-.cart-button {
-    position: absolute;
-    top: 200px;
-    right: 5px;
-    /* margin-top: auto; */
-    background: none;
-    border: none;
-    cursor: pointer;
-    align-self: center;
-    padding: 5px;
-    transition: transform 0.3s;
-}
-
-.cart-button:hover {
-    transform: scale(1.1);
-}
-
-.cart-button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-.cart-button1 {
-    position: absolute;
-    /* top: 200px;
-    right: 5px; */
-    /* margin-top: auto; */
-    background: none;
-    border: none;
-    cursor: pointer;
-    align-self: center;
-    padding: 5px;
-    transition: transform 0.3s;
-}
-
-.cart-button1:hover {
-    transform: scale(1.1);
-}
-
-.cart-button1:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-       /* Cart count styles */
-       .cart-count {
-            display: inline-block;
-            background-color: #ff5722;
-            color: white;
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            font-size: 12px;
-            text-align: center;
-            line-height: 20px;
-            margin-left: 5px;
-        }
-
-.color-preview {
-    display: flex;
-    justify-content: center;
-    margin: 5px 0;
-    flex-wrap: wrap;
-}
-
-.color-dot {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    margin: 0 3px;
-    border: 1px solid #ddd;
-    cursor: pointer;
-}
-
-.size-preview {
-    text-align: center;
-    font-size: 0.9em;
-    color: #666;
-    margin: 5px 0;
-}
-
-/* Pagination styles */
-#pagination {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-#pagination button {
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 8px 12px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#pagination button:hover {
-    background-color: #555;
-}
-
-#page-info {
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-}
-
-/* Modal styles - UPDATED */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    overflow: auto;
-}
-
-.modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: 5% auto;
-    padding: 25px;
-    border-radius: 8px;
-    width: 80%;
-    max-width: 900px;
-    display: flex;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    animation: modalFadeIn 0.3s;
-}
-
-@keyframes modalFadeIn {
-    from {opacity: 0; transform: translateY(-30px);}
-    to {opacity: 1; transform: translateY(0);}
-}
-
-.modal-column {
-    flex: 1;
-    padding: 0 15px;
-}
-
-.modal-column:first-child {
-    border-right: 1px solid #eee;
-}
-
-#modal-image {
-    width: 100%;
-    max-height: 300px;
-    object-fit: contain;
-    margin: 15px 0;
-    border-radius: 4px;
-}
-
-#modal-title {
-    font-size: 1.6em;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-#modal-price {
-    font-size: 1.4em;
-    color: #333;
-    margin: 15px 0;
-}
-
-.sizes-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 20px;
-}
-
-.size-option {
-    padding: 8px 12px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.size-option:hover, .size-option.selected {
-    background-color: #333;
-    color: white;
-    border-color: #333;
-}
-
-#color-options {
-    margin-bottom: 20px;
-}
-
-.color-option {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin: 0 8px 8px 0;
-    border: 1px solid #ddd;
-    cursor: pointer;
-    transition: transform 0.2s;
-    display: inline-block;
-}
-
-.color-option:hover, .color-option.selected {
-    transform: scale(1.1);
-    box-shadow: 0 0 0 2px #333;
-}
-
-#modal-features {
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-
-#modal-features li {
-    margin-bottom: 8px;
-    color: #555;
-}
-
-.favorite-button {
-    /* position: absolute;
-    top: 20px;
-    right: 20px; */
-    background: none;
-    border: none;
-    font-size: 28px;
-    cursor: pointer;
-    opacity: 0.5;
-    transition: opacity 0.3s, transform 0.3s;
-}
-
-.favorite-button:hover {
-    opacity: 1;
-    transform: scale(1.1);
-}
-
-.favorite-button.active {
-    opacity: 1;
-}
-
-.button9 {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    text-align: center;
-    transition: background-color 0.3s;
-    margin-top: 15px;
-    font-weight: 500;
-}
-
-.button9:hover {
-    background-color: #555;
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 28px;
-    cursor: pointer;
-    color: #aaa;
-    transition: color 0.3s;
-}
-
-.close:hover {
-    color: #333;
-}
-
-/* Footer styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 30px 0;
-    margin-top: auto;
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 20px;
-}
-
-.footer-section {
-    flex: 1;
-    min-width: 200px;
-    margin-bottom: 20px;
-}
-
-.footer-section h3 {
-    color: #fff;
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section li {
-    margin-bottom: 10px;
-}
-
-.footer-section a {
-    color: #ddd;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-section a:hover {
-    color: #ffcc00;
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    width: 100%;
-    margin-top: 20px;
-}
-
-/* Mobile burger menu styles */
-.burger-menu-icon {
-    display: none;
-    cursor: pointer;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.mobile-nav {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 80%;
-    max-width: 300px;
-    height: 100%;
-    background-color: #333;
-    z-index: 1000;
-    padding: 20px;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
-}
-
-.mobile-nav.active {
-    transform: translateX(0);
-}
-
-.mobile-nav-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-}
-
-.mobile-nav-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.7);
-    z-index: 999;
-}
-
-/* Responsive styles */
-@media (max-width: 992px) {
-    .product-card {
-        width: calc(33.33% - 14px); /* 3 cards per row */
-    }
-}
-
-@media (max-width: 768px) {
-    #container_cart {
-        flex-direction: column;
-        padding: 10px;
-    }
-    
-    #sidebar {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    
-    .product-card {
-        width: calc(50% - 10px); /* 2 cards per row */
-    }
-    
-    /* Mobile menu styles */
-    .burger-menu-icon {
-        display: block;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        z-index: 100;
-    }
-    
-    .header-container .logo {
-        margin-left: 40px;
-    }
-    
-    .header-container .phone-number,
-    .header-container nav,
-    .header-container .user-controls {
-        display: none;
-    }
-    
-    /* Modal mobile */
-    .modal-content {
-        flex-direction: column;
-        width: 95%;
-        margin: 10% auto;
-        padding: 15px;
-    }
-    
-    .modal-column:first-child {
-        border-right: none;
-        border-bottom: 1px solid #eee;
-        padding-bottom: 15px;
-        margin-bottom: 15px;
-    }
-    
-    /* Footer mobile */
-    .footer-container {
-        flex-direction: column;
-    }
-    
-    .footer-section {
-        margin-bottom: 25px;
-    }
-}
-
-@media (max-width: 480px) {
-    .product-card {
-        width: 100%; /* 1 card per row */
-    }
-}
-
-
-.button9 {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    text-align: center;
-    transition: background-color 0.3s;
-    margin-top: 15px;
-    font-weight: 500;
-    cursor: pointer;
-    border: none;
-    font-size: 16px;
-}
-
-.button9:hover {
-    background-color: #555;
-}
-
-.button9.in-cart {
-    background-color: #4CAF50;
-}
-</style>
-
-
-
-
-
-</head>
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог товаров</title>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-    <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', Arial, sans-serif;
-}
-
-body {
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* Header styles */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.header-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.phone-number {
-    margin: 0 1.5rem;
-    white-space: nowrap;
-}
-
-.phone-number a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-    display: flex;
-    align-items: center;
-}
-
-.phone-number a:hover {
-    color: #ffcc00;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav li {
-    margin-left: 1.5rem;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #ffcc00;
-}
-
-.user-controls {
-    display: flex;
-    align-items: center;
-}
-
-.user-controls a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 1rem;
-    display: flex;
-    align-items: center;
-}
-
-.user-controls a:hover {
-    color: #ffcc00;
-}
-
-.user-controls a svg {
-    margin-right: 0.5rem;
-}
-
-/* Main content layout - UPDATED */
-#container_cart {
-    display: flex;
-    max-width: 1200px;
-    margin: 20px auto;
-    flex: 1;
-    padding: 0 20px;
-    gap: 20px;
-}
-
-#sidebar {
-    width: 280px;
-    min-width: 280px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    height: fit-content;
-}
-
-#main-content {
-    flex: 1;
-}
-
-/* Filter styles */
-.filter-group {
-    margin-bottom: 15px;
-}
-
-.filter-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 500;
-}
-
-.filter-group input[type="text"],
-.filter-group select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-.price-inputs {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 5px;
-}
-
-.price-inputs input {
-    width: calc(50% - 5px);
-    background-color: #ffffff;
-    color: #000000;
-    border: 2px solid #02a6ec;
-    padding: 5px;
-    box-sizing: border-box;
-}
-
-.price-inputs input::placeholder {
-    color: #999;
-}
-
-.ui-widget-content {
-    border: 1px solid #bdc3c7;
-    background: #e1e1e1;
-    color: #222222;
-    margin-top: 4px;
-}
-
-.ui-slider .ui-slider-handle {
-    cursor: default;
-    width: 2em;
-    height: 1.2em;
-    background: #d8ec02;
-    color: #000000;
-    text-align: center;
-    margin-left: -1em;
-}
-
-#slider {
-    margin: 10px 8px 20px 8px;
-    width: calc(100% - 16px);
-}
-
-#sidebar button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 5px;
-    width: 100%;
-    transition: background-color 0.3s;
-}
-
-#sidebar button:hover {
-    background-color: #555;
-}
-
-#sidebar button:last-child {
-    background-color: #666;
-    margin-top: 10px;
-}
-
-/* Products grid - UPDATED */
-#product-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.product-card {
-    position: relative;
-    background-color: white;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    width: calc(25% - 15px); /* 4 cards per row */
-    display: flex;
-    flex-direction: column;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.product-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: contain;
-    margin: 0 auto 10px;
-    border-radius: 4px;
-}
-
-.product-card h3 {
-    margin-bottom: 5px;
-    text-align: center;
-    font-size: 1.1em;
-}
-
-.product-card p {
-    color: #666;
-    font-size: 0.9em;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-.price {
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin: 10px 0;
-}
-
-.availability {
-    text-align: center;
-    color: green;
-    margin-bottom: 10px;
-}
-
-.availability:not(:empty)::before {
-    content: "• ";
-}
-
 .favorite-btn {
     position: absolute;
     top: 10px;
-    right: 20px;
+    right: 10px;
     background: none;
     border: none;
     cursor: pointer;
@@ -1004,7 +249,7 @@ nav a:hover {
 }
 
 .cart-button {
-    /* margin-top: auto; */
+    margin-top: auto;
     background: none;
     border: none;
     cursor: pointer;
@@ -1185,9 +430,9 @@ nav a:hover {
 }
 
 .favorite-button {
-    /* position: absolute;
-    bottom: 20px;
-    right: 20px; */
+    position: absolute;
+    top: 20px;
+    right: 20px;
     background: none;
     border: none;
     font-size: 28px;
@@ -1442,6 +687,11 @@ footer {
     background-color: #4CAF50;
 }
 </style>
+
+
+
+
+
 </head>
 <body>
     <header>
@@ -1530,14 +780,15 @@ footer {
             </div>
             
             <div class="filter-group">
-                <label>Цена:</label>
-                <div class="price-inputs">
-                    <input type="number" id="minPrice" placeholder="От">
-                    <input type="number" id="maxPrice" placeholder="До">
-                </div>
-                <div id="slider"></div>
+                <label for="price-min">Цена от:</label>
+                <input type="range" id="price-min" min="0" max="80000" value="0">
+                <span id="price-min-value">0</span>
             </div>
-            
+            <div class="filter-group">
+                <label for="price-max">Цена до:</label>
+                <input type="range" id="price-max" min="0" max="80000" value="80000">
+                <span id="price-max-value">80000</span>
+            </div>
             <div class="filter-group">
                 <label for="brand">Бренд:</label>
                 <select id="brand">
@@ -1587,10 +838,10 @@ footer {
             <div id="color-options" style="display: flex; flex-wrap: wrap;"></div>
         </div>
         <div class="modal-column">
+            <button class="favorite-button" id="add-to-favorites" data-id="0" onclick="toggleFavorite(this)">❤️</button>
             <h3>Характеристики:</h3>
             <ul id="modal-features"></ul>
-            <button class="favorite-button" id="add-to-favorites" data-id="0" onclick="toggleFavorite(this)">❤️</button>
-            <button class="cart-button1" id="add-to-cart" onclick="event.stopPropagation(); toggleCartFromModal();">
+            <button class="cart-button" id="add-to-cart" onclick="event.stopPropagation(); toggleCartFromModal();">
                 <svg width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
                     <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h1m17 0h-1m0 0-1 10H5L4 10m16 0h-4M4 10h4m4 4v2m3-2v2m-6-2v2m-1-6h8m-8 0V8c0-1.333.8-4 4-4s4 2.667 4 4v2"/>
                 </svg>
@@ -1632,8 +883,6 @@ footer {
         </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
     <script>
       // Глобальные переменные для данных и состояния
 let rawData = {};
@@ -1642,94 +891,8 @@ const itemsPerPage = 8;
 let currentPage = 1;
 let doorData = {};
 let allProducts = []; // Для хранения всех продуктов из всех серий
-let minPriceFilter = 0;
-let maxPriceFilter = 80000;
-document.getElementById('maxPrice').addEventListener('change', function(e) {
-    const value = Number(e.target.value) || 0;
-    // Проверка, чтобы максимальная цена не была меньше минимальной
-    if (value < $("#slider").slider("values", 0)) {
-        e.target.value = $("#slider").slider("values", 1);
-        return;
-    }
-    $("#slider").slider("values", 1, value);
-    maxPriceFilter = value;
-    currentPage = 1;
-    filterProducts();
-});
 
-$(function() {
-    $("#slider").slider({
-        range: true,
-        min: 0,
-        max: 80000,
-        values: [0, 80000],
-        slide: function(event, ui) {
-            $("#minPrice").val(ui.values[0]);
-            $("#maxPrice").val(ui.values[1]);
-            // Update filter variables
-            minPriceFilter = ui.values[0];
-            maxPriceFilter = ui.values[1];
-            // Don't filter while sliding to avoid performance issues
-        },
-        stop: function(event, ui) {
-            // Apply filters only when sliding stops to improve performance
-            currentPage = 1;
-            filterProducts();
-        }
-    });
-    
-    // Initialize input values
-    $("#minPrice").val($("#slider").slider("values", 0));
-    $("#maxPrice").val($("#slider").slider("values", 1));
-});
-
-// Handle minPrice input changes
-document.getElementById('minPrice').addEventListener('input', function(e) {
-    const value = Number(e.target.value) || 0;
-    const maxValue = $("#slider").slider("values", 1);
-    
-    // Ensure min doesn't exceed max
-    const validValue = Math.min(value, maxValue);
-    
-    // Update the input if value was adjusted
-    if (value !== validValue) {
-        e.target.value = validValue;
-    }
-    
-    // Update slider
-    $("#slider").slider("values", 0, validValue);
-    minPriceFilter = validValue;
-});
-
-// Handle minPrice change event (when user presses Enter or leaves the field)
-document.getElementById('minPrice').addEventListener('change', function(e) {
-    currentPage = 1;
-    filterProducts();
-});
-
-// Handle maxPrice input changes
-document.getElementById('maxPrice').addEventListener('input', function(e) {
-    const value = Number(e.target.value) || 0;
-    const minValue = $("#slider").slider("values", 0);
-    
-    // Ensure max isn't below min
-    const validValue = Math.max(value, minValue);
-    
-    // Update the input if value was adjusted
-    if (value !== validValue) {
-        e.target.value = validValue;
-    }
-    
-    // Update slider
-    $("#slider").slider("values", 1, validValue);
-    maxPriceFilter = validValue;
-});
-
-// Handle maxPrice change event (when user presses Enter or leaves the field)
-document.getElementById('maxPrice').addEventListener('change', function(e) {
-    currentPage = 1;
-    filterProducts();
-});
+// Добавьте эти функции в ваш существующий JavaScript
 
 // Сохраняем выбранные фильтры при их изменении
 function saveFilterSelections() {
@@ -1737,9 +900,7 @@ function saveFilterSelections() {
         brand: document.getElementById('brand').value,
         category: document.getElementById('category').value,
         series: document.getElementById('series').value,
-        currentPage: currentPage, // Сохраняем текущую страницу
-        minPrice: minPriceFilter,
-        maxPrice: maxPriceFilter
+        currentPage: currentPage // Сохраняем текущую страницу
     };
     
     localStorage.setItem('filterSelections', JSON.stringify(filterSelections));
@@ -1763,15 +924,6 @@ async function restoreFilterSelections() {
                     }
                 }, 100);
             });
-        }
-        
-        // Восстанавливаем цены
-        if (filterSelections.minPrice !== undefined && filterSelections.maxPrice !== undefined) {
-            minPriceFilter = parseInt(filterSelections.minPrice);
-            maxPriceFilter = parseInt(filterSelections.maxPrice);
-            $("#slider").slider("values", [minPriceFilter, maxPriceFilter]);
-            $("#minPrice").val(minPriceFilter);
-            $("#maxPrice").val(maxPriceFilter);
         }
         
         // Восстанавливаем выбор бренда
@@ -1802,7 +954,8 @@ async function restoreFilterSelections() {
                     seriesSelect.value = filterSelections.series;
                 }
             }
-        }        
+        }
+        
         // Применяем фильтры для отображения отфильтрованных продуктов
         // Но не сбрасываем номер страницы
         filterProductsWithoutPageReset();
@@ -1812,7 +965,8 @@ async function restoreFilterSelections() {
             currentPage = parseInt(filterSelections.currentPage);
             renderProducts();
             renderPagination();
-        }        
+        }
+        
     } catch (error) {
         console.error('Ошибка восстановления выбранных фильтров:', error);
     }
@@ -1821,6 +975,8 @@ async function restoreFilterSelections() {
 // Добавляем новую функцию, которая фильтрует продукты без сброса номера страницы
 function filterProductsWithoutPageReset() {
     const searchQuery = document.getElementById('search').value.toLowerCase();
+    const priceMin = parseInt(document.getElementById('price-min').value);
+    const priceMax = parseInt(document.getElementById('price-max').value);
     const selectedBrand = document.getElementById('brand').value;
     const selectedCategory = document.getElementById('category').value;
     const selectedSeries = document.getElementById('series').value;
@@ -1833,12 +989,13 @@ function filterProductsWithoutPageReset() {
     filteredProducts = rawData.products.filter(product => {
         return (
             (product.title.toLowerCase().includes(searchQuery)) &&
-            (product.price >= minPriceFilter && product.price <= maxPriceFilter) &&
+            (product.price >= priceMin && product.price <= priceMax) &&
             (!selectedBrand || product.brand === selectedBrand) &&
             (!selectedCategory || product.category === selectedCategory) &&
             (!selectedSeries || product.series === selectedSeries)
         );
-       });
+    });
+
     // Не сбрасываем текущую страницу
     renderProducts();
     renderPagination();
@@ -1878,6 +1035,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Добавляем обработчики для других элементов фильтра
     document.getElementById('search').addEventListener('input', saveFilterSelections);
+    document.getElementById('price-min').addEventListener('input', saveFilterSelections);
+    document.getElementById('price-max').addEventListener('input', saveFilterSelections);
 });
 
 async function loadDoorData() {
@@ -1993,6 +1152,8 @@ function populateFilterOptions() {
     document.getElementById('brand').addEventListener('change', updateCategoryOptions);
     document.getElementById('category').addEventListener('change', updateSeriesOptions);
     document.getElementById('series').addEventListener('change', handleSeriesChange);
+    document.getElementById('price-min').addEventListener('input', updatePriceMinValue);
+    document.getElementById('price-max').addEventListener('input', updatePriceMaxValue);
 }
 
 // Модифицируем функцию handleSeriesChange для фильтрации продуктов
@@ -2011,13 +1172,10 @@ function clearSelections() {
     document.getElementById('series').value = '';
     document.getElementById('series').disabled = true;
     document.getElementById('search').value = '';
-    
-    // Сбрасываем цены
-    minPriceFilter = 0;
-    maxPriceFilter = 80000;
-    $("#slider").slider("values", [minPriceFilter, maxPriceFilter]);
-    $("#minPrice").val(minPriceFilter);
-    $("#maxPrice").val(maxPriceFilter);
+    document.getElementById('price-min').value = 0;
+    document.getElementById('price-max').value = 80000;
+    updatePriceMinValue();
+    updatePriceMaxValue();
     
     localStorage.removeItem('filterSelections');
     currentPage = 1;
@@ -2082,9 +1240,21 @@ function updateSeriesOptions() {
     }
 }
 
+function updatePriceMinValue() {
+    const minValue = document.getElementById('price-min').value;
+    document.getElementById('price-min-value').textContent = minValue;
+}
+
+function updatePriceMaxValue() {
+    const maxValue = document.getElementById('price-max').value;
+    document.getElementById('price-max-value').textContent = maxValue;
+}
+
 // Modify the original filterProducts function to save state
 function filterProducts() {
     const searchQuery = document.getElementById('search').value.toLowerCase();
+    const priceMin = parseInt(document.getElementById('price-min').value);
+    const priceMax = parseInt(document.getElementById('price-max').value);
     const selectedBrand = document.getElementById('brand').value;
     const selectedCategory = document.getElementById('category').value;
     const selectedSeries = document.getElementById('series').value;
@@ -2097,7 +1267,7 @@ function filterProducts() {
     filteredProducts = rawData.products.filter(product => {
         return (
             (product.title.toLowerCase().includes(searchQuery)) &&
-            (product.price >= minPriceFilter && product.price <= maxPriceFilter) &&
+            (product.price >= priceMin && product.price <= priceMax) &&
             (!selectedBrand || product.brand === selectedBrand) &&
             (!selectedCategory || product.category === selectedCategory) &&
             (!selectedSeries || product.series === selectedSeries)
@@ -2156,21 +1326,21 @@ function renderProducts() {
                         onclick="event.stopPropagation(); toggleFavorite(this)" data-id="${product.id}">
                     ♥
                 </button>
-                
-                <button class="cart-button ${isInCart ? 'in-cart' : ''}" 
-                        onclick="event.stopPropagation(); toggleCart('${product.id}');"
-                        ${!product.inStock ? 'disabled' : ''}>
-                    ${isInCart ? 
-                        '<svg width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#000000" fill-rule="evenodd" d="M9.612 6.084C9.16 6.711 9 7.494 9 8v1h6V8c0-.507-.16-1.289-.611-1.916C13.974 5.508 13.274 5 12 5c-1.274 0-1.974.508-2.388 1.084zM17 9V8c0-.827-.24-2.044-.988-3.084C15.226 3.825 13.926 3 12 3c-1.926 0-3.226.825-4.012 1.916C7.24 5.956 7 7.173 7 8v1H3a1 1 0 0 0 0 2h.095l.91 9.1A1 1 0 0 0 5 21h14a1 1 0 0 0 .995-.9l.91-9.1H21a1 1 0 1 0 0-2h-4zm-8 5a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2zm4 0a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2zm4 0a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2z" clip-rule="evenodd"/></svg>' : 
-                        '<svg width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h1m17 0h-1m0 0-1 10H5L4 10m16 0h-4M4 10h4m4 4v2m3-2v2m-6-2v2m-1-6h8m-8 0V8c0-1.333.8-4 4-4s4 2.667 4 4v2"/></svg>'}
-                </button>
                 <img src="${product.images[0]?.thumbnail || 'placeholder.jpg'}" alt="${product.title}">
                 <h3>${product.title}</h3>
                 <p class="product-series">Серия: ${product.series}</p>
-                <h3>Цена: ${product.price} руб.</h3>          
+                <h3>Цена: ${product.price} руб.</h3>
+                ${colorElements}
+                ${sizeElements}
             </div>
             
-
+            <button class="cart-button ${isInCart ? 'in-cart' : ''}" 
+                    onclick="event.stopPropagation(); toggleCart('${product.id}');"
+                    ${!product.inStock ? 'disabled' : ''}>
+                ${isInCart ? 
+                    '<svg width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#000000" fill-rule="evenodd" d="M9.612 6.084C9.16 6.711 9 7.494 9 8v1h6V8c0-.507-.16-1.289-.611-1.916C13.974 5.508 13.274 5 12 5c-1.274 0-1.974.508-2.388 1.084zM17 9V8c0-.827-.24-2.044-.988-3.084C15.226 3.825 13.926 3 12 3c-1.926 0-3.226.825-4.012 1.916C7.24 5.956 7 7.173 7 8v1H3a1 1 0 0 0 0 2h.095l.91 9.1A1 1 0 0 0 5 21h14a1 1 0 0 0 .995-.9l.91-9.1H21a1 1 0 1 0 0-2h-4zm-8 5a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2zm4 0a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2zm4 0a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2z" clip-rule="evenodd"/></svg>' : 
+                    '<svg width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h1m17 0h-1m0 0-1 10H5L4 10m16 0h-4M4 10h4m4 4v2m3-2v2m-6-2v2m-1-6h8m-8 0V8c0-1.333.8-4 4-4s4 2.667 4 4v2"/></svg>'}
+            </button>
         `;
         
         const cardInner = card.querySelector('.product-card-inner');
@@ -2482,8 +1652,8 @@ function applyFilters() {
 function saveFilterState() {
     const filterState = {
         search: document.getElementById('search').value,
-        minPrice: minPriceFilter,
-        maxPrice: maxPriceFilter,
+        priceMin: document.getElementById('price-min').value,
+        priceMax: document.getElementById('price-max').value,
         brand: document.getElementById('brand').value,
         category: document.getElementById('category').value,
         series: document.getElementById('series').value,
@@ -2503,12 +1673,11 @@ function restoreFilterState() {
         
         // Восстанавливаем текстовый поиск и диапазон цен
         document.getElementById('search').value = filterState.search || '';
-        minPriceFilter = filterState.minPrice || 0;
-        maxPriceFilter = filterState.maxPrice || 80000;
+        document.getElementById('price-min').value = filterState.priceMin || 0;
+        document.getElementById('price-max').value = filterState.priceMax || 80000;
         
-        $("#slider").slider("values", [minPriceFilter, maxPriceFilter]);
-        $("#minPrice").val(minPriceFilter);
-        $("#maxPrice").val(maxPriceFilter);
+        updatePriceMinValue();
+        updatePriceMaxValue();
         
         // Восстанавливаем выбор бренда
         const brandSelect = document.getElementById('brand');
@@ -2553,18 +1722,18 @@ function restoreFilterState() {
 // Модифицируем resetFilters() для очистки сохраненного состояния
 function resetFilters() {
     const searchElem = document.getElementById('search');
+    const priceMinElem = document.getElementById('price-min');
+    const priceMaxElem = document.getElementById('price-max');
     const brandElem = document.getElementById('brand');
     const categoryElem = document.getElementById('category');
     const seriesElem = document.getElementById('series');
     
     if (searchElem) searchElem.value = '';
+    if (priceMinElem) priceMinElem.value = 0;
+    if (priceMaxElem) priceMaxElem.value = 80000;
     
-    // Сбрасываем цены
-    minPriceFilter = 0;
-    maxPriceFilter = 80000;
-    $("#slider").slider("values", [minPriceFilter, maxPriceFilter]);
-    $("#minPrice").val(minPriceFilter);
-    $("#maxPrice").val(maxPriceFilter);
+    updatePriceMinValue();
+    updatePriceMaxValue();
     
     if (brandElem) brandElem.value = '';
     if (categoryElem) {
