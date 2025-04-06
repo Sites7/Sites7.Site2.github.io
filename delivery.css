@@ -1,0 +1,260 @@
+/* Общие стили для страницы доставки */
+.delivery-section {
+    min-height: 60vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Заголовок страницы */
+.delivery-section h1 {
+    color: #2196F3;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.delivery-section h1:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100px;
+    background: #2196F3;
+    margin: 15px auto 30px;
+}
+
+/* Информация о доставке */
+.delivery-info {
+    margin-top: 30px;
+}
+
+.delivery-info h2 {
+    color: #2196F3;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Способы доставки */
+.delivery-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.delivery-method {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #ffffff;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery-method:hover {
+    transform: translateY(-5px);
+    box-shadow: 7px 7px 14px #d1d1d1, -7px -7px 14px #ffffff;
+}
+
+.method-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #2196F3;
+}
+
+.method-info h3 {
+    color: #2196F3;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.method-info p {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.method-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.price, .time {
+    color: #444;
+    font-weight: 500;
+}
+
+/* Зоны доставки */
+.delivery-map {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #ffffff;
+    margin-bottom: 40px;
+}
+
+.delivery-map h2 {
+    color: #2196F3;
+    text-align: center;
+}
+
+.delivery-map p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.user-region-info {
+    background: #f5f7fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.user-region-info p {
+    font-weight: 500;
+    text-align: left;
+}
+
+.user-region-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.user-region-info ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    color: #444;
+}
+
+.user-region-info ul li:last-child {
+    border-bottom: none;
+}
+
+.delivery-map-image {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.delivery-map-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* FAQ */
+.delivery-faq {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #ffffff;
+}
+
+.delivery-faq h2 {
+    color: #2196F3;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    background: #f5f7fa;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    background: #e0e6ed;
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.toggle-icon {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2196F3;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 0 0 8px 8px;
+    margin-top: 2px;
+}
+
+.faq-answer.active {
+    display: block;
+}
+
+.faq-answer p {
+    margin: 0;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 768px) {
+    .delivery-section h1 {
+        font-size: 24px;
+    }
+    
+    .delivery-methods {
+        grid-template-columns: 1fr;
+    }
+    
+    .method-details {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .delivery-map, .delivery-faq {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .delivery-section {
+        padding: 20px 0;
+    }
+    
+    .delivery-method, .delivery-map, .delivery-faq {
+        padding: 15px;
+    }
+    
+    .delivery-info h2 {
+        font-size: 20px;
+    }
+    
+    .method-info h3 {
+        font-size: 18px;
+    }
+}
